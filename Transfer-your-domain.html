@@ -35,9 +35,35 @@
     content="Transfer domain name effortlessly with Domgys. Enjoy a seamless domain transfer process and expert support to manage your online presence effectively.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
+<style>
+  .google_translate_container {    
+    position: relative;
+  }
+  .google_container{
+    position: absolute;
+    top: 0;
+    right:10px;
+  }
+  .goog-te-combo {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #b4b3b3;
+    padding:  4px;
+    border-radius: 3px;
+    font-size: 14px;    
+    cursor: pointer;
+    outline: none;
+  }
+  .goog-te-combo option {
+    background-color: #e9e7e7;
+  }
+  
+</style>
 
 <body>
-  <div id="google_translate_element"></div>
+  <div class="google_translate_container">    
+    <div id="google_translate_element" class="google_container"></div>
+  </div>
   <!-- <input type="text" placeholder="input name"/>
   <button>this is button</button> <br> -->
   
@@ -117,7 +143,7 @@
                   Email</a></li>
               <li><a href="https://domgys.in/Hostedemail.html">Hosted E-mail</a>
               </li>
-              <li><a href="https://developmentraahi.github.io/email-filtering/anti-spam.html">Anti Spam</a>
+              <li><a href="https://domgys.in/anti-spam.html">Anti Spam</a>
               </li>
             </ul>
           </li>
@@ -881,37 +907,26 @@
 
   </footer>
 
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./transfer-your-domain/js/app.js"></script>
+  <script>    
 
-<script>
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement (
+    function googleTranslateElementInit() {
+        const element = new google.translate.TranslateElement (
           { pageLanguage: "en"},
           "google_translate_element"
-        );
-      }
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./transfer-your-domain/js/app.js"></script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-
+        );                
+      }         
     document.addEventListener('DOMContentLoaded', function () {
       AOS.init({
         disable: 'mobile',
         offset: 150,
         duration: 700,
-      });
-      AOS.init({ disable: 'mobile' });
+      });     
     });
-
   </script>
-
-
-
 </body>
 
 </html>
